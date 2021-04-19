@@ -1,0 +1,57 @@
+.fade-in
+{
+    animation: animate 4s ease-in-out ;
+    transition: opacity 250ms ease-in;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+
+}
+.fade-in.appear
+{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.from-left
+{
+    animation:animatede 1s ease-in-out;
+}
+@keyframes animatede
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.from-right
+{
+    animation:animated 1s ease-in-out;
+}
+@keyframes animated
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
