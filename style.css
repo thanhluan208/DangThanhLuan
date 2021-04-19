@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  height:100%;
+  background: linear-gradient(90deg, #525252 0%,#383838 50%, #333333 100%);
+}
+
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(131, 131, 131,0) 0%, rgba(102, 102, 102, 0.747) 50%,rgba(80, 80, 80, 0.897) 75%, rgba(117, 117, 117, 0) 100%);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(222, 223, 228, 0.747);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  color: rgb(255, 255, 255);
+  animation-delay: 2s;
+  width: 150%;
+}
+
+.stickyHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.disable
+{
+  display: none;
+}
+.dud {
+  color: #757575;
+}
+#IconContainer
+{
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  z-index: 1000;
+  flex-direction:unset;
+  margin-left: 5%;
+}
+#IconContainer #icon
+{
+  position: relative;
+  list-style: none ;
+  margin-left: 10%;
+  background-color: transparent;
+  display: unset;
+  padding: 0;
+}
+#IconContainer #icon #link 
+{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
+}
+#IconContainer #icon #link:hover
+{
+  transform: translateY(-20px);
+}
+#IconContainer #icon #link::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s;
+}
+#IconContainer #icon #link:hover::before
+{
+  transform: skewX(45deg) translateX(-150px);
+}

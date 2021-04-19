@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+.dive {
+    width: 800px !important;
+
+    font-family: "Cutive Mono", monospace;
+}
+
+.color {
+  animation: slidein 7s ;
+  animation-delay: 1.5;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0%  { margin-left: -6000px;}
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:1;width:355px;}
+}
+
+
